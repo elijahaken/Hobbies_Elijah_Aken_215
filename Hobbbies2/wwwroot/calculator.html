@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Service Calculator</title>
+    <link rel="icon" type="image/jpg" href="img/raf,360x360,075,t,fafafa_ca443f4786.jpg">
+    <link href="bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 50px; /* Ensure content is not overlapped by footer */
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .form-group {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consultation Calculator</h1>
+    <p>I charge $5 an hour for a consultation of any workout that I know of.</p>
+    <div class="form-group">
+        <label for="hours">Enter hours needed:</label>
+        <input type="number" id="hours" class="form-control" min="1">
+    </div>
+    <div class="form-group">
+        <label>Your hourly rate ($):</label>
+        <input type="text" id="rate" class="form-control" value="5" readonly>
+    </div>
+    <div class="form-group">
+        <button id="calculate" class="btn btn-primary">Calculate Total</button>
+    </div>
+    <div class="form-group">
+        <label>Total cost ($):</label>
+        <input type="text" id="total" class="form-control" readonly>
+    </div>
+    <a href="index.html" class="btn btn-secondary">Back to Home</a>
+    <br />
+    <footer>
+        <p>&copy; 2024 by Elijah Aken.  Body of a Power Lifter.  Strength of a Body Builder.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/calculator.js"></script>
+    
+</body>
+</html>
